@@ -1,0 +1,1 @@
+# Puppet Template for Boxen

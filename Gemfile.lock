@@ -1,0 +1,47 @@
+GEM
+  remote: http://rubygems.org/
+  specs:
+    cardboard (0.0.0)
+      librarian-puppet (~> 0.9)
+      puppet (~> 3.0)
+      puppet-lint (~> 0.3)
+      puppetlabs_spec_helper (~> 0.3)
+      rspec-puppet (~> 0.1)
+    diff-lcs (1.1.3)
+    facter (1.6.15)
+    hiera (1.0.0)
+    json (1.7.5)
+    librarian-puppet (0.9.7)
+      json
+      puppet
+      thor (~> 0.15)
+    metaclass (0.0.1)
+    mocha (0.13.0)
+      metaclass (~> 0.0.1)
+    puppet (3.0.1)
+      facter (~> 1.6.11)
+      hiera (~> 1.0.0)
+    puppet-lint (0.3.2)
+    puppetlabs_spec_helper (0.3.0)
+      mocha (>= 0.10.5)
+      rake
+      rspec (>= 2.9.0)
+      rspec-puppet (>= 0.1.1)
+    rake (10.0.2)
+    rspec (2.12.0)
+      rspec-core (~> 2.12.0)
+      rspec-expectations (~> 2.12.0)
+      rspec-mocks (~> 2.12.0)
+    rspec-core (2.12.0)
+    rspec-expectations (2.12.0)
+      diff-lcs (~> 1.1.3)
+    rspec-mocks (2.12.0)
+    rspec-puppet (0.1.5)
+      rspec
+    thor (0.16.0)
+
+PLATFORMS
+  ruby
+
+DEPENDENCIES
+  cardboard (~> 0.0)
