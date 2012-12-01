@@ -7,3 +7,5 @@ cd $(dirname "$0")/..
 
 rm -rf .bundle/config
 bundle install --binstubs bin --path .bundle --quiet
+
+bin/cardboard bootstrap
