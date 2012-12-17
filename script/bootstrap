@@ -5,7 +5,12 @@ set -e
 
 cd $(dirname "$0")/..
 
-rm -rf .bundle/config
-bundle install --binstubs bin --path .bundle --quiet
+BIN=.bundle/binstubs
+CARDBOARD=$BIN/cardboard
+SCRIPT=$(basename "$0")
 
-exec bin/cardboard bootstrap "$@"
+rm -rf .bundle/{binstubs,config}
+
+
+bundle install --binstubs "$BIN" --path .bundle --quiet && "$CARDBOARD" bootstrap
+[ "$SCRIPT" = "bootstrap" ] || exec $CARDBOARD "$SCRIPT" "$@"
