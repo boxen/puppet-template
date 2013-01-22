@@ -1,5 +1,5 @@
 #!/bin/sh
-# Make sure local dependencies are available.
+# Make sure deps are available and run a Cardboard command.
 
 set -e
 
@@ -11,5 +11,5 @@ SCRIPT=$(basename "$0")
 
 rm -rf .bundle/{binstubs,config}
 
-bundle install --binstubs "$BIN" --path .bundle --quiet && "$CARDBOARD" bootstrap
-[ "$SCRIPT" = "bootstrap" ] || exec "$CARDBOARD" "$SCRIPT" "$@"
+bundle install --binstubs "$BIN" --path .bundle --quiet &&
+  "$CARDBOARD" bootstrap && exec "$CARDBOARD" "$SCRIPT" "$@"

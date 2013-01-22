@@ -1,41 +1,71 @@
-GEM
-  remote: http://rubygems.org/
+PATH
+  remote: /Users/jbarnette/boxen/cardboard
   specs:
     cardboard (0.0.0)
-      librarian-puppet (~> 0.9)
-      puppet (~> 3.0)
+      boxen (~> 0.6)
       puppet-lint (~> 0.3)
       puppetlabs_spec_helper (~> 0.3)
       rspec-puppet (~> 0.1)
+
+GEM
+  remote: http://rubygems.org/
+  specs:
+    addressable (2.3.2)
+    ansi (1.4.3)
+    boxen (0.6.0)
+      ansi (~> 1.4)
+      hiera (~> 1.0.0)
+      highline (~> 1.6)
+      json_pure (~> 1.7)
+      librarian-puppet (~> 0.9)
+      octokit (~> 1.15)
+      puppet (~> 3.0)
     diff-lcs (1.1.3)
-    facter (1.6.15)
+    facter (1.6.17)
+    faraday (0.8.4)
+      multipart-post (~> 1.1)
+    faraday_middleware (0.9.0)
+      faraday (>= 0.7.4, < 0.9)
+    hashie (1.2.0)
     hiera (1.0.0)
-    json (1.7.5)
+    highline (1.6.15)
+    json (1.7.6)
+    json_pure (1.7.6)
     librarian-puppet (0.9.7)
       json
       puppet
       thor (~> 0.15)
     metaclass (0.0.1)
-    mocha (0.13.0)
+    mocha (0.13.1)
       metaclass (~> 0.0.1)
-    puppet (3.0.1)
+    multi_json (1.5.0)
+    multipart-post (1.1.5)
+    netrc (0.7.7)
+    octokit (1.22.0)
+      addressable (~> 2.2)
+      faraday (~> 0.8)
+      faraday_middleware (~> 0.9)
+      hashie (~> 1.2)
+      multi_json (~> 1.3)
+      netrc (~> 0.7.7)
+    puppet (3.0.2)
       facter (~> 1.6.11)
       hiera (~> 1.0.0)
     puppet-lint (0.3.2)
-    puppetlabs_spec_helper (0.3.0)
+    puppetlabs_spec_helper (0.4.0)
       mocha (>= 0.10.5)
       rake
       rspec (>= 2.9.0)
       rspec-puppet (>= 0.1.1)
-    rake (10.0.2)
+    rake (10.0.3)
     rspec (2.12.0)
       rspec-core (~> 2.12.0)
       rspec-expectations (~> 2.12.0)
       rspec-mocks (~> 2.12.0)
-    rspec-core (2.12.0)
-    rspec-expectations (2.12.0)
+    rspec-core (2.12.2)
+    rspec-expectations (2.12.1)
       diff-lcs (~> 1.1.3)
-    rspec-mocks (2.12.0)
+    rspec-mocks (2.12.1)
     rspec-puppet (0.1.5)
       rspec
     thor (0.16.0)
@@ -44,4 +74,4 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
-  cardboard (~> 0.0)
+  cardboard!
