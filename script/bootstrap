@@ -11,6 +11,5 @@ SCRIPT=$(basename "$0")
 
 rm -rf .bundle/{binstubs,config}
 
-
 bundle install --binstubs "$BIN" --path .bundle --quiet && "$CARDBOARD" bootstrap
-[ "$SCRIPT" = "bootstrap" ] || exec $CARDBOARD "$SCRIPT" "$@"
+[ "$SCRIPT" = "bootstrap" ] || exec "$CARDBOARD" "$SCRIPT" "$@"
