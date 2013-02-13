@@ -1,3 +1,3 @@
 source "http://rubygems.org"
 
-gem "cardboard", :path => "/Users/jbarnette/boxen/cardboard"
+gem "cardboard", :path => "/Users/jbarnette/src/boxen/cardboard"
