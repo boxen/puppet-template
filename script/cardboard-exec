@@ -10,8 +10,12 @@ BIN=$BUNDLE/binstubs
 CARDBOARD=$BIN/cardboard
 SCRIPT=$(basename "$0")
 
+BUNDLE_ARGS="--binstubs $BIN --path $BUNDLE --quiet"
+[ "cibuild" = "$SCRIPT" ] && BUNDLE_ARGS="$BUNDLE_ARGS --no-quiet"
+
 rm -rf {$BIN,$BUNDLE/config}
-bundle install --binstubs "$BIN" --path "$BUNDLE" --quiet
+bundle install $BUNDLE_ARGS
+
 "$CARDBOARD" bootstrap
 
 exec "$CARDBOARD" "$SCRIPT" "$@"
