@@ -1,3 +1,3 @@
-source "http://rubygems.org"
+source "https://rubygems.org"
 
-gem "cardboard", :path => "/Users/jbarnette/src/boxen/cardboard"
+gem "cardboard", "~> 0.1"
