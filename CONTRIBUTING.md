@@ -6,8 +6,7 @@ Thanks for contributing to Boxen! A couple of notes to help you out:
   use it in your Boxen instead.
 
 * Otherwise, go crazy! Fork it, fix it, test it, pull request it.
-  Remember that a PR is the beginning of a conversation, not the end
-  of one.
+  Remember that a PR is the start of a conversation, not the end of one.
 
 :heart:,
 Boxen
