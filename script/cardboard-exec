@@ -7,7 +7,6 @@ cd $(dirname "$0")/..
 
 BUNDLE=.bundle
 BIN=$BUNDLE/binstubs
-CARDBOARD=$BIN/cardboard
 SCRIPT=$(basename "$0")
 
 BUNDLE_ARGS="--binstubs $BIN --path $BUNDLE --quiet"
@@ -16,6 +15,5 @@ BUNDLE_ARGS="--binstubs $BIN --path $BUNDLE --quiet"
 rm -rf {$BIN,$BUNDLE/config}
 bundle install $BUNDLE_ARGS
 
-"$CARDBOARD" bootstrap
-
-exec "$CARDBOARD" "$SCRIPT" "$@"
+bundle exec cardboard bootstrap
+exec bundle exec cardboard "$SCRIPT" "$@"
