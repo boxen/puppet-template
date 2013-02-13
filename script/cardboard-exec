@@ -10,10 +10,8 @@ BIN=$BUNDLE/binstubs
 CARDBOARD=$BIN/cardboard
 SCRIPT=$(basename "$0")
 
-if [ -z "$SKIP_CARDBOARD_BOOTSTRAP" ]; then
-  rm -rf {$BIN,$BUNDLE/config}
-  bundle install --binstubs "$BIN" --path "$BUNDLE" --quiet
-  "$CARDBOARD" bootstrap
-fi
+rm -rf {$BIN,$BUNDLE/config}
+bundle install --binstubs "$BIN" --path "$BUNDLE" --quiet
+"$CARDBOARD" bootstrap
 
 exec "$CARDBOARD" "$SCRIPT" "$@"
