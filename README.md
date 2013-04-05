@@ -8,7 +8,7 @@ cd ~/src/boxen/puppet-mynewmodule
 git init .
 git remote add template https://github.com/boxen/puppet-template.git
 git fetch template
-git co -b master template/master
+git checkout -b master template/master
 ```
 
 Now we're ready to make it our own!
