@@ -27,7 +27,7 @@ GEM
     highline (1.6.15)
     json (1.7.7)
     json_pure (1.7.7)
-    librarian-puppet (0.9.8)
+    librarian-puppet (0.9.9)
       json
       thor (~> 0.15)
     metaclass (0.0.1)
