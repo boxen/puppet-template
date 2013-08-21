@@ -8,7 +8,7 @@ GEM
       hiera (~> 1.0)
       highline (~> 1.6)
       json_pure (>= 1.7.7, < 2.0)
-      librarian-puppet (~> 0.9.9)
+      librarian-puppet (~> 0.9.10)
       octokit (~> 1.15)
       puppet (~> 3.0)
     cardboard (1.0.4)
