@@ -11,15 +11,22 @@ git fetch template
 git checkout -b master template/master
 ```
 
-Now we're ready to make it our own!
+Now edit the class name in `manifests/init.pp` and `spec/classes/template_spec.rb` to match the name of the module, without forgetting to rename `template_spec.rb` accordingly.
+
+Now we're ready to make it our own and run a build!
 
 ```
 script/cibuild
 .bundle/binstubs/rspec-puppet-init
 ```
 
-Now you'll need to edit `manifests/init.pp` and `spec/classes/template_spec.rb`
-for your module.
+Note that unless you have edited the class name and then run the above scripts, puppet-lint will fail during the cibuild with an error message similar to:
+
+```
+--> Checking lint:
+manifests/init.pp - ERROR: template not in autoload module layout on line 2
+```
+
 If your module has other dependencies, be sure to update
 `spec/fixtures/Puppetfile`.
 From then on, you can use `script/cibuild` to run the tests.
