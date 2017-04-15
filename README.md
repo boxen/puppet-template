@@ -1,6 +1,9 @@
 # Using this Template
 
-Bootstrap it:
+## boxen-module-maker
+You can use the [boxen-module-maker](https://github.com/petems/boxen-module-maker) gem, which uses this repo as a base, but then tweaks the specs and manifests according to your options.
+
+## Bootstrap
 
 ```
 mkdir -p ~/src/boxen/puppet-mynewmodule
